@@ -1,0 +1,19 @@
+version: '3.8' 
+
+services:
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # RabbitMQ main port
+      - "15672:15672"  # RabbitMQ management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: "guest"  # Default username
+      RABBITMQ_DEFAULT_PASS: "guest"  # Default password
+#     volumes:
+#       - rabbitmq_data:/var/lib/rabbitmq  # Persist RabbitMQ data
+
+# volumes:
+#   rabbitmq_data:  # Volume to persist RabbitMQ data
+
+## UNCOMMENT THE ABOVE LINES IF YOU WANT TO PERSIST DATA
