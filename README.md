@@ -18,3 +18,11 @@ docker compose -f databases/mongo/docker-compose.yaml up -d
 ```bash
 docker compose -f message-brokers/rabbitmq/docker-compose.yaml up -d
 ```
+
+- [Kafka (Kraft)](./message-brokers/kafka/docker-compose.yaml)
+
+```bash
+docker compose -f message-brokers/kafka/docker-compose.yaml up -d
+```
+
+

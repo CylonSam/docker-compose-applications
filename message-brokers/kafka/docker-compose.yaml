@@ -1,0 +1,6 @@
+services:
+  kafka-kraft:
+    build: ./image/
+    restart: always
+    ports:
+      - 9092:9092
