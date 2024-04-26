@@ -12,6 +12,12 @@ Version for everything is *latest*, keep up!
 docker compose -f databases/mongo/docker-compose.yaml up -d
 ```
 
+- Redis
+
+```bash
+docker compose -f databases/redis/docker-compose.yaml up -d
+```
+
 ### Message Brokers
 - [RabbitMQ](message-brokers/rabbitmq/docker-compose.yaml)
 
