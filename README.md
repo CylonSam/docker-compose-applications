@@ -12,6 +12,12 @@ Version for everything is *latest*, keep up!
 docker compose -f databases/mongo/docker-compose.yaml up -d
 ```
 
+- [Postgres](databases/postgresql/docker-compose.yaml)
+
+```bash
+docker compose -f databases/postgres/docker-compose.yaml up -d
+```
+
 - Redis
 
 ```bash
